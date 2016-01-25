@@ -1,5 +1,56 @@
+/*** Default ***/
 body {
+  background: #105B63;
   min-height: 100%;
   min-width: 100%;
-  background: #FFF8E3;
+}
+
+.container {
+  display: block;
+  min-width: 100%;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 33%;
+  max-width: 33%;
+}
+
+.start-btn {
+  background: #BD4932;
+  border: none;
+  /* color: #fff; */
+  color: #FFFAD5;
+  cursor: pointer;
+  display: block;
+  font-family: 'PT Sans Caption', sans-serif;
+  font-size: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 2em;
+  min-width: 20%;
+  text-transform: uppercase;
+  text-shadow: -1px 1px #417cb8;
+
+}
+
+.start-btn:hover {
+  background: #973B28;
+}
+
+/*** Galaxy S5 ***/
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3)   {
+  /* styles here */
+  .logo {
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .start-btn {
+    font-size: 4em;
+    min-height: 2.5em;
+    min-width: 70%; 
+  }
 }
