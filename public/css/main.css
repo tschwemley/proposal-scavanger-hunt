@@ -3,6 +3,9 @@ body {
   background: #105B63;
   min-height: 100%;
   min-width: 100%;
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
 }
 
 .container {
@@ -18,10 +21,28 @@ body {
   max-width: 33%;
 }
 
+#clue-holder {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#answer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+  min-height: 2em;
+  min-width: 40%;
+  font-size: 2em;
+  border: solid .2em #BD4932;
+  background: transparent;
+  color: #FFFAD5;
+}
+
 .start-btn {
   background: #BD4932;
   border: none;
-  /* color: #fff; */
   color: #FFFAD5;
   cursor: pointer;
   display: block;
@@ -40,6 +61,25 @@ body {
   background: #973B28;
 }
 
+.clue-holder, .timer-holder, .hint {
+  color: #FFD34E;
+  display: block;
+  font-family: 'PT Sans Caption', sans-serif;
+  font-size: 1.5em;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.hint {
+  color: #DB9E36;
+}
+
+.clue-holder {
+  display: block;
+  margin-bottom: 1em;
+  margin-top: 0;
+}
+
 /*** Galaxy S5 ***/
 @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3)   {
   /* styles here */
@@ -52,5 +92,9 @@ body {
     font-size: 4em;
     min-height: 2.5em;
     min-width: 70%; 
+  }
+
+  .clue-holder, .timer-holder {
+    font-size: 3em;
   }
 }
