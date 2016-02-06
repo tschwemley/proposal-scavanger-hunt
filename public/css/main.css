@@ -28,16 +28,21 @@ body {
 }
 
 #answer {
+  background: transparent;
+  border: solid .2em #BD4932;
+  color: #FFFAD5;
   display: block;
+  font-size: 2em;
+  margin-bottom: 1em;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 1em;
   min-height: 2em;
   min-width: 40%;
-  font-size: 2em;
-  border: solid .2em #BD4932;
-  background: transparent;
-  color: #FFFAD5;
+  padding-left: .5em;
+}
+
+#answer:focus {
+  outline: 0;
 }
 
 .start-btn {
@@ -72,6 +77,7 @@ body {
 
 .hint {
   color: #DB9E36;
+  display: none;
 }
 
 .clue-holder {
@@ -84,8 +90,8 @@ body {
 @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3)   {
   /* styles here */
   .logo {
-    max-height: 100%;
-    max-width: 100%;
+    max-height: 75%;
+    max-width: 75%;
   }
 
   .start-btn {
@@ -95,6 +101,12 @@ body {
   }
 
   .clue-holder, .timer-holder {
-    font-size: 3em;
+    font-size: 2.5em;
+  }
+
+  #answer {
+    min-width: 75%; 
+    /* min-height: 3.5em; */
+    font-size: 3.5em;
   }
 }
