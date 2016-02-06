@@ -1,37 +1,15 @@
 $(document).ready(function() {
-  var startTime = localStorage.getItem('startTime');
   var started = localStorage.getItem('started');
-  var clue = localStorage.getItem('clue');
-  var numGuesses = localStorage.getItem('numGuesses');
-  console.log("start time: " + startTime);
-  console.log("started: " + started);
-  console.log("clue: " + clue);
-  console.log("guesses: " + numGuesses);
-
-  // Remove local storage items (for testing only)
-  // localStorage.removeItem('startTime');
-  // localStorage.removeItem('started');
-  // localStorage.removeItem('clue');
-  // localStorage.removeItem('numGuesses');
-  // console.log(localStorage.getItem('startTime'));
-  // console.log(localStorage.getItem('started'));
-  // console.log(localStorage.getItem('clue'));
-  // console.log(localStorage.getItem('numGuesses'));
 
   $('.start-btn').on('click', function(e) {
-    if (startTime === null) {
+    if (started === null) {
       // Initialize scavanger hunt
       localStorage.setItem('startTime', Date.now());
       localStorage.setItem('started', true);
       localStorage.setItem('clue', 0);
       localStorage.setItem('numGuesses', 0);
 
-      // Hide and show appropriate elements
-      $('.start-btn').hide();
-      $('#answer').show();
-      $('.timer-holder').show();
-
-      $('.clue-holder').html(clues[localStorage.getItem('clue')]);
+      window.location.reload();
     }
   });
   
@@ -39,7 +17,6 @@ $(document).ready(function() {
   if (started === null) {
     $('#answer').hide();
     $('.timer-holder').hide();
-    console.log('not started');
   } else {
     $('.start-btn').hide();
     $('.clue-holder').html(clues[localStorage.getItem('clue')]);
@@ -48,19 +25,39 @@ $(document).ready(function() {
   $('.answer-form').submit(function(e) {
     e.preventDefault(); 
 
-    // $.ajax({
-    //   "method": "post",
-    //   "url": "/submit.php",
-    //   "data": {
-    //     "answer": $('#answer').val()
-    //   }
-    //   // "dataType": "json"
-    // })
-    
-    // .done(function(data) {
-    //   console.log(data);
-    //   // window.location.reload();
-    // });
+    $.ajax({
+      "method": "post",
+      "url": "/submit.php",
+      "data": {
+        "answer": $('#answer').val(),
+        "clue": localStorage.getItem('clue')
+      },
+      "dataType": "json"
+    })
+
+    .done(function(data) {
+
+      // True is correct answer
+      if (data[0] === true) {
+        var clueNum = parseInt(localStorage.getItem('clue'));
+        localStorage.setItem('clue', clueNum + 1);
+        localStorage.setItem('numGuesses', 0);
+
+        $('.clue-holder').html(clues[localStorage.getItem('clue')]);
+        $('#answer').val('');
+        $('#strong-hint').html('');
+        $('.hint').hide();
+      } else {
+        var numGuesses = parseInt(localStorage.getItem('numGuesses')) + 1;
+        localStorage.setItem('numGuesses', numGuesses);
+
+        // Show hint if more than 3 guesses
+        if (numGuesses > 3) {
+          $('#strong-hint').html(hints[localStorage.getItem('clue')]);
+          $('.hint').show();
+        }
+      }
+    });
 
   });
 });

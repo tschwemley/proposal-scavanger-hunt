@@ -10,9 +10,7 @@ include __DIR__ . "/../views/header.html";
         <div class="clue-holder">Great! Now that you're awake let's get started...</div>
         <input type="text" id="answer" name="answer" placeholder="Answers go in the box!" />
         <div class="hint">
-            <strong id="strong-hint">
-                Hint.
-            </strong>
+            <strong id="strong-hint">here</strong>
         </div>
         <button type="submit" class="start-btn" id="start-btn">Start!</button>
     </form>

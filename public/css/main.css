@@ -100,8 +100,8 @@ body {
     min-width: 70%; 
   }
 
-  .clue-holder, .timer-holder {
-    font-size: 2.5em;
+  .clue-holder, .timer-holder, .hint {
+    font-size: 3em;
   }
 
   #answer {

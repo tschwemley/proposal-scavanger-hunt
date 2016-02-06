@@ -1,3 +1,22 @@
 var clues = {
-  0: "You did it! I'm so proud I could <em>literally</em> cry. If you're ready for your first <em>real</em> clue, enter 'TYLER IS THE BEST'"
+  0: "You did it! I'm so proud I could <em>literally</em> cry. If you're ready for your first <em>real</em> clue, enter \"I'M READY FOR FUN\"",
+  1: "First clue; A Haiku!<br/>Collared to your favorite,<br/>lies your first answer.",
+  2: "Feeling shunned and significantly less loved Tuesday decided to leave your next clue under a treat outside. Enter the number you find. You'll be using what you find soon.",
+  3: "From here your quest to find me begins. Travels and hardships will occur; I'm lost as shit and need your help. Make sure you're prepared for your journey. When you're ready type in \"omg rdy!1!!!1!\"",
+  4: "Go to the parking lot where your car broke down when you first joined me in A2. There you will find a Hot Wheel [description of hidden place]. Enter the model number of the car (found on bottom)",
+  5: "<a href='https://www.youtube.com/watch?v=AF6GPFHbyxg'>HOT WHEELS LEADING THE WAY!</a> Obviously I'm not here. When you're ready to go to the next place enter \"HOT WHEELS LEADING THE WAY\"",
+  6: "I'm feeling both Poke'rific and party-rific. Which means there is only one place I can be. Chained to the bike rack at 829 Tappan. Obviously. Enter what you find.", 
+  7: "Sorry I must've missed you. BUT YOU JUST FOUND A FREAKING MONKEY. I bet that monkey feels pretty damn lucky. Take a wild guess where you're going next?",
+  8: "THAT'S RIGHT! Once there find [description of flash art or something unique at shop] and enter it.",
+  9: "Unfortunately I couldn't stay. Apparently appointments are needed or some such. But when I was leaving I heard the greates fight song that was ever written. Can I get a \"Hail to the Victors!\"?",
+  10: "WELCOME TO THE BIG HOUSE BABY! In the NW corner is Wolverine plaza. Enter the year on the bricks at the gate and I'll send you on your way (because let's be honest, I'm not here either).",
+  11: "Woo! You did it! You're getting damn good at this. Let's take a break and have you answer some questions. Are you having fun?",
+  12: "GREAT! THAT'S SUPER! Next, are you beautiful?",
+  13: "WOW! ABSOLUTELY SUPERB! 2 IN A ROW! Alright now for a hard one, how much did Tuesday weigh when we got her?",
+  14: "What? That wasn't hard enough? Fine. Here's a real stumper: how much did TOKEN weigh when we got him?",
+  15: "Fine. Those were softballs lobbed at you. Whatever. I'm at the Humane Society. See you soon. When you get there find the dog [place of a dog]. Enter his/her name.",
+  16: "Ugh, I was really there. I'm sorry but I ran into Carly and Spencer. The 3 of us decided to go back to Spencer's place and hang out for a bit. Do you wanna come?",
+  17: "Alright I guess you can come then. Spencer's address is 1079 Barton Dr Apt 205. The building is first on the left after going around the curve. Unfortunately Spencer had to bail early but Carly and I are holding down the fort.",
+  18: "I bet you're looking beautiful. Even more so then when you answered clue 13. Now that you've used a closet for it's intended purpose LET'S GO TO THE MALL WHERE YOU KNOW THEY HAVE IT ALL! Enter \"Leggoe 2 da mall\"",
+  19: "THE CAMERA MALL THAT IS. I'll be waiting for you (for real this time) at Camera Mall (518 E Washington St). Can't wait to see you soon. Love you!",
 };
