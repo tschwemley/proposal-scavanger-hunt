@@ -2,9 +2,9 @@
 
 Simple site I made to accompany a scavaneger hunt I designed to propose to my girlfriend.
 
-Uses web storage to store clues, number of guesses, and start time.
+Uses web storage to store clues, number of guesses, and start time. If the wrong answer is inputted more than 3 times then a hint will display a hint below the answer box. Also keeps track of how long it has been since the hunt was started.
 
-Live demo can be viewed at: http://whereinannarboris.tylerschwemley.com
+Site can be viewed at: http://whereinannarboris.tylerschwemley.com
 
 ### Answers (in Numerical Order)
     0 => "I'M READY FOR FUN",
