@@ -26,4 +26,4 @@ Live demo can be viewed at: http://whereinannarboris.tylerschwemley.com
     16 => "Yes",
     17 => "Closets are for clothes",
     18 => "Leggoe 2 da mall",
-    19 => "zowema asdfaf2 2323",
+    19 => "zowema asdfaf2 2323", // Not the most elegant way to handle a non-answerable question but it works.
